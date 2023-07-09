@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMCC Career Readiness</title>
+    
+    <style>
+        
+        body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;       
+        min-height: 100vh;
+        background-image: url("indexPageBackgroundimg.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;  
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        .container{
+        max-width: 1200px;    
+        margin: 0 auto;
+        padding: 30px;
+ 
+        }
+        .content {
+        flex-grow: 1;
+        overflow-y: auto;  
+        padding: 0 auto;
+        }
+        .Topbar {
+        position: fixed;
+        list-style-type: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        background-color: #1c8fa9;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .logo-item {
+            margin-right: 10px;
+        }
+
+        .menu-items {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+    
+        .Topbar li {
+            float: left;
+        }
+    
+        .Topbar li a {
+            display: inline-block;
+            color: white;
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;          
+            border-radius: 4px;
+            background-color: #1c8fa9;
+            
+        }      
+        .Topbar a:hover {
+            color: #ddd;
+        }
+    
+        .search-bar {
+            float: left;
+            margin-top: 8px;
+        }
+    
+        .search-form {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .search-form input[type="text"] {
+            padding: 6px;
+            border-radius: 4px;
+            border: none;
+            border: 1px solid black;
+        }
+    
+        .search-form button {
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+    
+        .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .logo {
+            margin-top: 40px;
+            max-width: 450px;
+            width: 100%;
+            height: 100%;
+            height: 300px;
+            border: blur;               
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #3f828e;
+            color: #fff;
+            text-align: center;
+            padding: 0;
+            font-size: 14px;
+            z-index: 1;
+            }
+
+        .body-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            justify-items: center;
+            align-items: center;
+            margin-bottom: 50px;
+            list-style: none;
+            z-index: auto;
+            
+            padding-bottom: 20px;
+            }
+
+            .body-image div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+
+            }
+
+        .body-images a {
+            display:inline- block;
+            color: white;
+            text-align: center;
+            padding: 8px 16px;
+            background-color: #127B92;
+            border-radius: 4px;
+            margin-right:10 px;
+            text-decoration: none;
+            font-weight: bold; 
+            margin-top: 20px;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+               
+        }
+        .body-images a:hover {
+            color: rgb(52, 92, 80);
+        }
+        .pic {
+            width: 250px;
+            height: 250px;
+            
+            border-radius: 1000px;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+     
+        .icon {
+            width: 150px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 10px;
+        
+            }
+            h1{
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+                color: #000;
+                text-align: center;
+                text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                font-size: 62px;
+                font-family: Koh Santepheap;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            h2{
+              
+                color: rgb(91, 86, 86);              
+                text-align: center;
+                font-size: 25px;
+                font-family: Koh Santepheap;             
+                line-height: normal;
+            }
+            h3{
+                display: flex;
+                justify-content: center;
+                color: #686f70;
+                font-size: 18px;
+            }
+             
+            .team-members {
+    
+            font-weight: normal; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-family: 'IBM Plex Serif';
+            color: #55BED6;
+            background-color: #127B92;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
+            }
+
+            .teammate {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            text-align: center;
+            margin-top: 50px;
+            }
+
+            .teammate img {
+            width: 150px; /* Adjust the width of the image as needed */
+            height: 150px; /* Adjust the height of the image as needed */
+            border-radius: 1000px;
+            }
+
+            .teammate p {
+            margin-top: 10px;
+            font-size: 25px;
+            }
+            .icon-container {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px; /* Optional: Adds some spacing between each icon-container */
+                }
+
+                .fa-solid {
+              
+                font-size: 35px; /* Adjust the size as needed */
+                margin-right: 10px; /* Optional: Adds some spacing between the icon and the text */
+                }
+                .fa-brands{
+                    font-size: 35px; /* Adjust the size as needed */
+                    margin-right: 10px; /* Optional: Adds some spacing between the icon and the text */
+                }
+                .middlepic{
+                    width: 200px;
+                    height: 250px;
+                    border-radius: 40px;
+                    border: blur; 
+                    margin-top: 50px;              
+                }
+              .banner{
+               margin-top: 60px;
+                width: 100%;
+                height: 350px;
+                
+               }
+                .middlepageDescription{
+                    list-style-type: disc;
+                    
+                }
+                .middlepageDescription li{
+                    font-size: 18px;
+                    font-family: 'IBM Plex Serif';
+                    color: #151e1e;
+                    margin-left: 50px;
+                    margin-top: 20px;
+                }
+                .logo-container {
+                        position: relative;
+                        margin-bottom: 515px;
+                        margin: top 10px;
+                        z-index: -1;
+                     
+
+                    }
+
+                    .banner, .logo {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                       
+                    }
+
+                    .banner {
+                        z-index: index 3;  /* This ensures that the banner image appears above the logo image */
+                        height: 450px;
+                        width: 100%;
+                        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+                    }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+   
+    <header>
+        <nav>
+            
+            <ul class="Topbar">
+                <li class="logo-item">
+                    <a href="#">
+                        <img src="bmccicon.png" alt="icon" class="icon">
+                    </a>
+                </li>
+                <li class="menu-items">
+                    <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                    <a href="CourseSearch.php"><i class="fa-brands fa-searchengin"></i>Course Search</a>
+                    <a href="MajorandClassesList.php"><i class="fa-solid fa-list"></i>Major and Classes List</a>
+                    <a href="MajorCoursePlanner.html"><i class="fa-brands fa-golang"></i>Major Course Planner</a>
+                    <a href="piecharts.html"><i class="fa-solid fa-clock"></i>View Enrollment Data</a>
+                </li>
+                <li class="search-bar">
+                    <form class="search-form">
+                        <input type="text" placeholder="Search" class="search-input">
+                        <button type="submit" class="search-button">Go</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  
+    <div class="logo-container">
+        <img src="careerReadinessimg1.png" alt="BMCC & Beyond" class="banner">
+        <img src="index_page_bmcc_logo.png" alt="BMCC School Logo" class="logo">
+    </div>
+    <main>
+        <div class="container">
+        <!-- <div class="logo-container">
+            <img src="index_page_bmcc_logo.png" alt="BMCC School Logo" class="logo">
+        </div> -->
+        <h1>Career Readiness</h1>
+        <h2>Description :<br>The problem of career readiness stems from a lack of practical skills, limited professional networks, inadequate career guidance, and limited exposure to the job market. Our solution aims to address these problems by providing students with the necessary resources, support, and opportunities to enhance their career readiness, increase their employability, and successfully transition into the workforce.
+
+        </h2>
+        <div class="icon-container"style="color: #3f828e">
+            <h4 class="fa-solid fa-magnifying-glass-arrow-right fa-fade"></h4>
+            <h3><img src="careerReadinessimg2.jpeg" alt="little pic" class="middlepic"></h3>
+            <ul class="middlepageDescription">
+                <li>
+                    Chatbot assistance: We have integrated a chatbot into the webpage, which is available 24/7 to answer students' questions and provide assistance.
+                </li>
+                <li>
+                    Data Analysis Visualization: To aid students in selecting their majors within the CIS department at BMCC, our solution includes a dedicated page featuring a set of data analysis visualizations.
+                    </li>
+                <li>Assistance in skill development: The website will provide students with resources and materials to enhance their skills relevant to their desired career paths.
+                </li>
+                <li>Job search support: The website will provide students with job search support by offering a job board with curated job listings, resume and cover letter templates, and resources on job market research.
+                </li>
+                </div>
+          
+          <div class="icon-container" style="color: #3f828e">
+            <h4 class="fa-solid fa-robot fa-bounce"></h4>
+            <h3><br>Quick assistance:<br><br> We prioritize providing quick and efficient assistance to students through our website. This includes features such as a live chat support system, where students can connect with advisors or knowledgeable staff members to get immediate help with their queries or concerns. We also offer a comprehensive FAQ section that addresses common questions and issues students may encounter, allowing them to find answers without the need for direct assistance.</h3>
+          </div>
+          
+          <div class="icon-container" style="color: #3f828e">
+            <h4 class="fa-solid fa-magnifying-glass-chart fa-flip"></h4>
+            <h3>Data Analysis Visualization:<br><br> To aid students in selecting their majors within the CIS department at BMCC, our solution includes a dedicated page featuring a set of data analysis visualizations. These visualizations provide an overview of the majors offered, including information on enrollment trends, employment prospects, average salaries, and other relevant data points. By presenting this information in an easily understandable format, students can get a quick glance and gain insights into different majors, helping them make more informed decisions about their academic path.</h3>
+          </div>
+          <h1 style="font-size: 35px;">What are Our Solutions? </h1>
+          <h2 style="font-size: 20px;" >Addressing the problem of career readiness is to create a comprehensive website that provides students with the necessary information and guidance to prepare for their job-hunting process and develop the skills required for their chosen career paths.
+        </h2>
+        <ul class="body-images">
+            <li class="body-image">
+              <div>
+                <img src="careerReadinessimg4.jpeg" alt="Data Analysis" class="pic">
+                <a href="#">Data Analysis</a>
+              </div>
+            </li>
+            <li class="body-image">
+              <div>
+                <img src="careerReadinessimg5.jpeg" alt="Career Skill Search" class="pic">
+                <a href="#">Career Skill Search</a>
+              </div>
+            </li>
+            <li class="body-image">
+              <div>
+                <img src="careerReadinessimg7.jpeg" alt="Internship" class="pic">
+                <a href="#">Internship</a>
+              </div>
+            </li>
+           
+          </ul>
+          <li class="teammate">
+            <p style="font-size: 18px;"> <br>Computer Information Systems Dept.<br>
+      
+              Fiterman Hall, Room F-0930 <br>
+              New York, NY 10007 <br>
+              Phone: (212) 220-1476 <br>
+              
+              Office Hours:    <br>
+              Monday-Friday<br>
+              9 a.m.-5 p.m</p> 
+              </li>
+    </main>
+</div>
+<ul class="team-members">
+    <li style="font-size: 45px; ">Team Members</li>
+    
+    <li class="teammate">
+      <img src="luyao.png" alt="Team Member">
+      <p style="font-size: 25px;">Lu Yao</p>
+    </li>
+    
+    <li class="teammate">
+      <img src="Mustafa.png" alt="Team Member">
+      <p style="font-size: 25px;">Mustafa Donmez</p>
+      
+    </li>
+    <li class="teammate">
+        <li style="font-size: 45px; ">Mentors</li>
+        <li class="teammate">
+          <img src="Azhar.png" alt="Team Member">
+           
+        <p style="font-size: 25px;">Prof. Azhar</p>
+        </li>
+        <li class="teammate">
+          <img src="Benkarroum.png" alt="Team Member">
+        <p style="font-size: 25px;">Prof. Benkarroum</p>
+        
+      </li>
+
+
+    <li class="teammate">
+      
+      <p style="font-size: 18px;"> @ Borough of Manhattan Community College | 199 Chambers Street | New York, NY 10007 | Contact Us | Privacy Policy</p> 
+     
+      
+
+  </ul>
+ 
+    <script src="https://kit.fontawesome.com/0d370ca485.js" crossorigin="anonymous"></script>
+    <script>
+            window.watsonAssistantChatOptions = {
+                integrationID: "ca3979cb-7ded-4fde-8cb2-6e34f933a2f1", // The ID of this integration.
+                region: "us-south", // The region your integration is hosted in.
+                serviceInstanceID: "0df18117-9251-4626-adea-21f86e3b22a6", // The ID of your service instance.
+                onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+                const t=document.createElement('script');
+                t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+                document.head.appendChild(t);
+            });
+        
+    </script>
+</body>
+</html>
