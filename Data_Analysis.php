@@ -33,9 +33,10 @@ $dataPoints2 = array(
     justify-content: flex-end;
 }
 
-            .Topbar {
+        .Topbar {
         position: fixed ;
         top: 0;
+        left:0;       
         list-style-type: none;
         width: 100%;
         margin: 0;
