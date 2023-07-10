@@ -63,7 +63,7 @@
 
         .icon {
             width: 150px;
-            height: 40px;
+            height:21px;
             margin-right: 10px;
         }
 
@@ -228,10 +228,11 @@
             <tbody>
                 <?php
                 // Establish a connection to the database
-                $servername = "127.0.0.1";
-                $username = "root";
-                $password = "";
-                $dbname = "Electives_courses";
+                    $majorId = $_POST['major'];
+                    $servername = "sql212.infinityfree.com";
+                    $username = "if0_34373034";
+                    $password = "g9LDz1n2hE";  
+                    $dbname = "if0_34373034_db_electives_courses";
 
                 $conn = new mysqli($servername, $username, $password, $dbname);
                 if ($conn->connect_error) {
@@ -239,13 +240,13 @@
                 }
 
                 // SQL query to retrieve the course information
-                $query = "SELECT id, course_name, credit, description, 'Individual_and_Society' AS table_name FROM Individual_and_Society
-                          UNION
-                          SELECT id, course_name, credit, description, 'US_Experience_in_Its_Diversity' AS table_name FROM US_Experience_in_Its_Diversity
-                          UNION
-                          SELECT id, course_name, credit, description, 'World_Cultures_and_Global_Issues' AS table_name FROM World_Cultures_and_Global_Issues
-                          UNION
-                          SELECT id, course_name, credit, description, 'Program_Electives' AS table_name FROM Program_Electives";
+           $query = "SELECT id, course_name, credit, description, 'Individual and Society' AS table_name FROM `Individual and Society`
+          UNION
+          SELECT id, course_name, credit, description, 'US Experience in Its Diversity' AS table_name FROM `US Experience in Its Diversity`
+          UNION
+          SELECT id, course_name, credit, description, 'World Cultures and Global Issues' AS table_name FROM `World Cultures and Global Issues`
+          UNION
+          SELECT id, course_name, credit, description, 'Program Electives' AS table_name FROM `Program Electives`";
 
                 $result = $conn->query($query);
 
