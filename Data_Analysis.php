@@ -1,4 +1,4 @@
-  <?php
+<?php
   $dataPoints1 = array(
       array("label"=> "Associate's degrees", "y"=> 38434),
       array("label"=> "Bachelor's degrees", "y"=> 398602),
@@ -208,7 +208,7 @@
           .chart-container1{
 
               display: grid;
-              grid-template-columns: repeat(4, 1fr);
+              grid-template-columns: repeat(2, 1fr);
               grid-gap: 20px;
               margin-left: 50px;
               padding: 0;              
@@ -223,7 +223,7 @@
           .chart-container2{
 
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           grid-gap: 20px;
           margin-left: 50px;
           padding: 0;
@@ -261,7 +261,7 @@
               }
               h2 a{
                 color:black;
-                text-decoration: none;
+                text-decoration: underline;
               }
       </style>
   <script>
@@ -337,7 +337,7 @@
       animationEnabled: true,
       theme: "light2",
       title:{
-        text: "Number of graduates by Degree Level 2000 & 2019 (National)"
+        text: ""
       },
       axisY:{
         includeZero: true
@@ -380,7 +380,7 @@
     animationEnabled: true,
     //theme: "light2",
     title:{
-      text: " Computer Science in Associate's Degrees awarded data by field: 2000-19"
+      text: "Computer Science in Associate's Degrees awarded data by field: 2000-2019"
     },
     axisX:{
       crosshair: {
@@ -405,243 +405,208 @@
     }]
   });
   chart.render();
-      var chart = new CanvasJS.Chart("chartContainer3", {
-    animationEnabled: true,
-    //theme: "light2",
-    title:{
-      text: " Enrollment data for CIS department at BMCC 2015-2022"
-    },
-    axisX:{
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    axisY:{
-      title: "Number of Students",
-      includeZero: true,
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    toolTip:{
-      enabled: false
-    },
-    data: [{
-      type: "area",
-      dataPoints: <?php echo json_encode($dataPoints3, JSON_NUMERIC_CHECK); ?>
-    }]
-  });
+
+  var chart = new CanvasJS.Chart("chartContainer3", {
+	animationEnabled: true,
+	title:{
+		text: "Enrollment data for CIS department at BMCC 2015-2022"
+	},
+	axisY: {
+		title: "Number of Students",
+		includeZero: true,
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	data: [{
+		type: "spline",
+		markerSize: 5,
+		xValueFormatString: "YYYY",
+		yValueFormatString: "$#,##0.##",
+		xValueType: "dateTime",
+		dataPoints: <?php echo json_encode($dataPoints3, JSON_NUMERIC_CHECK); ?>
+	}]
+});
+ 
   chart.render();
   var chart = new CanvasJS.Chart("chartContainer4", {
-    animationEnabled: true,
-    //theme: "light2",
-    title:{
-      text: " Graduation data for CIS department at BMCC 2016-2022"
-    },
-    axisX:{
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    axisY:{
-      title: "Number of Students",
-      includeZero: true,
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    toolTip:{
-      enabled: false
-    },
-    data: [{
-      type: "area",
-      dataPoints: <?php echo json_encode($dataPoints4, JSON_NUMERIC_CHECK); ?>
-    }]
-  });
+	animationEnabled: true,
+	title:{
+		text: "Graduation data for CIS department at BMCC 2016-2022"
+	},
+	axisY: {
+		title: "Number of Students",
+		includeZero: true,
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	data: [{
+		type: "spline",
+		markerSize: 5,
+		xValueFormatString: "YYYY",
+		yValueFormatString: "$#,##0.##",
+		xValueType: "dateTime",
+		dataPoints: <?php echo json_encode($dataPoints4, JSON_NUMERIC_CHECK); ?>
+	}]
+});
+ 
   chart.render();
   var chart = new CanvasJS.Chart("chartContainer5", {
-    animationEnabled: true,
-    //theme: "light2",
-    title:{
-      text: " Enrollment data for CS Major at BMCC 2016-2022"
-    },
-    axisX:{
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    axisY:{
-      title: "Number of Students",
-      includeZero: true,
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    toolTip:{
-      enabled: false
-    },
-    data: [{
-      type: "area",
-      dataPoints: <?php echo json_encode($dataPoints5, JSON_NUMERIC_CHECK); ?>
-    }]
-  });
+	animationEnabled: true,
+	title:{
+		text: "Enrollment data for CS Major at BMCC 2015-2022"
+	},
+	axisY: {
+		title: "Number of Students",
+		includeZero: true,
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	data: [{
+		type: "spline",
+		markerSize: 5,
+		xValueFormatString: "YYYY",
+		yValueFormatString: "$#,##0.##",
+		xValueType: "dateTime",
+		dataPoints: <?php echo json_encode($dataPoints5, JSON_NUMERIC_CHECK); ?>
+	}]
+});
+ 
   chart.render();
   var chart = new CanvasJS.Chart("chartContainer6", {
-    animationEnabled: true,
-    //theme: "light2",
-    title:{
-      text: " Graduation data for CS major at BMCC 2016-2022"
-    },
-    axisX:{
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    axisY:{
-      title: "Number of Students",
-      includeZero: true,
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    toolTip:{
-      enabled: false
-    },
-    data: [{
-      type: "area",
-      dataPoints: <?php echo json_encode($dataPoints6, JSON_NUMERIC_CHECK); ?>
-    }]
-  });
+	animationEnabled: true,
+	title:{
+		text: "Graduation data for CS major at BMCC 2016-2022"
+	},
+	axisY: {
+		title: "Number of Students",
+		includeZero: true,
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	data: [{
+		type: "spline",
+		markerSize: 5,
+		xValueFormatString: "YYYY",
+		yValueFormatString: "$#,##0.##",
+		xValueType: "dateTime",
+		dataPoints: <?php echo json_encode($dataPoints6, JSON_NUMERIC_CHECK); ?>
+	}]
+});
+ 
   chart.render();
   var chart = new CanvasJS.Chart("chartContainer7", {
-    animationEnabled: true,
-    //theme: "light2",
-    title:{
-      text: " Enrollment data for CIS Major at BMCC 2015-2022"
-    },
-    axisX:{
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    axisY:{
-      title: "Number of Students",
-      includeZero: true,
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    toolTip:{
-      enabled: false
-    },
-    data: [{
-      type: "area",
-      dataPoints: <?php echo json_encode($dataPoints7, JSON_NUMERIC_CHECK); ?>
-    }]
-  });
+	animationEnabled: true,
+	title:{
+		text: "Enrollment data for CIS Major at BMCC 2015-2022"
+	},
+	axisY: {
+		title: "Number of Students",
+		includeZero: true,
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	data: [{
+		type: "spline",
+		markerSize: 5,
+		xValueFormatString: "YYYY",
+		yValueFormatString: "$#,##0.##",
+		xValueType: "dateTime",
+		dataPoints: <?php echo json_encode($dataPoints7, JSON_NUMERIC_CHECK); ?>
+	}]
+});
+ 
   chart.render();
   var chart = new CanvasJS.Chart("chartContainer8", {
-    animationEnabled: true,
-    //theme: "light2",
-    title:{
-      text: " Graduation data for CIS major at BMCC 2015-2022"
-    },
-    axisX:{
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    axisY:{
-      title: "Number of Students",
-      includeZero: true,
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    toolTip:{
-      enabled: false
-    },
-    data: [{
-      type: "area",
-      dataPoints: <?php echo json_encode($dataPoints8, JSON_NUMERIC_CHECK); ?>
-    }]
-  });
+	animationEnabled: true,
+	title:{
+		text: "Graduation data for CIS major at BMCC 2016-2022"
+	},
+	axisY: {
+		title: "Number of Students",
+		includeZero: true,
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	data: [{
+		type: "spline",
+		markerSize: 5,
+		xValueFormatString: "YYYY",
+		yValueFormatString: "$#,##0.##",
+		xValueType: "dateTime",
+		dataPoints: <?php echo json_encode($dataPoints8, JSON_NUMERIC_CHECK); ?>
+	}]
+});
+ 
   chart.render();
   var chart = new CanvasJS.Chart("chartContainer11", {
-    animationEnabled: true,
-    //theme: "light2",
-    title:{
-      text: " Enrollment data for CNT Major at BMCC 2015-2022"
-    },
-    axisX:{
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    axisY:{
-      title: "Number of Students",
-      includeZero: true,
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    toolTip:{
-      enabled: false
-    },
-    data: [{
-      type: "area",
-      dataPoints: <?php echo json_encode($dataPoints11, JSON_NUMERIC_CHECK); ?>
-    }]
-  });
+	animationEnabled: true,
+	title:{
+		text: "Enrollment data for CNT Major at BMCC 2015-2022"
+	},
+	axisY: {
+		title: "Number of Students",
+		includeZero: true,
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	data: [{
+		type: "spline",
+		markerSize: 5,
+		xValueFormatString: "YYYY",
+		yValueFormatString: "$#,##0.##",
+		xValueType: "dateTime",
+		dataPoints: <?php echo json_encode($dataPoints11, JSON_NUMERIC_CHECK); ?>
+	}]
+});
+ 
   chart.render();
   var chart = new CanvasJS.Chart("chartContainer12", {
-    animationEnabled: true,
-    //theme: "light2",
-    title:{
-      text: "  Graduation data for CNT major at BMCC 2015-2022"
-    },
-    axisX:{
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    axisY:{
-      title: "Number of Students",
-      includeZero: true,
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true
-      }
-    },
-    toolTip:{
-      enabled: false
-    },
-    data: [{
-      type: "area",
-      dataPoints: <?php echo json_encode($dataPoints12, JSON_NUMERIC_CHECK); ?>
-    }]
-  });
+	animationEnabled: true,
+	title:{
+		text: "Graduation data for CNT major at BMCC 2016-2022"
+	},
+	axisY: {
+		title: "Number of Students",
+		includeZero: true,
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	data: [{
+		type: "spline",
+		markerSize: 5,
+		xValueFormatString: "YYYY",
+		yValueFormatString: "$#,##0.##",
+		xValueType: "dateTime",
+		dataPoints: <?php echo json_encode($dataPoints12, JSON_NUMERIC_CHECK); ?>
+	}]
+});
+ 
   chart.render();
+
   }
 
   </script>
   <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
       <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+            <script src="https://kit.fontawesome.com/0d370ca485.js" crossorigin="anonymous"></script>
   </head>
   <body>
   <header>
@@ -668,10 +633,10 @@
           </ul>
       </nav>
   </header>
-  <h1 style="text-align:center; margin-top: 80px;"> U.S nation Graduation Data of S&E (Science & Engineering) Marjors in Associate's Degrees from 2000 to 2019.</h1>
+  <h1 style="text-align:center; margin-top: 80px;"> U.S. nation Graduation Data of S&E (Science & Engineering) Marjors in Associate's Degrees from 2000 to 2019.</h1>
   <div class="text" style="max-width: 800px; margin: 0 auto; text-align: center;">
   
-    <h2 ><em>S&E Associate&apos;s Degrees</em><br>
+    <h2 ><em>S&E Associate&apos;s Degrees</em><a href="#target">(Click here for majors' detail)</a><br>
       Associate&apos;s degrees are the final degree earned by some students, whereas others continue their education at 4-year colleges or universities and earn higher degrees. 
       Many who transfer from community colleges to baccalaureate-granting institutions do not earn associate&apos;s degrees before transferring; they may be able to transfer credit 
       for specific courses.<br><br></h2>
@@ -687,6 +652,7 @@
           <div id="chartContainer2" style="height: 370px;width: 80%;"></div>
       </div>
     <div class="chart-item">
+    <h2 style="max-width:80%;font-weight: bold;font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:23px;">Number of graduates by Degree Level 2000 & 2019 (National) </h2>
           <div id="chartContainer9" style="height: 370px; width: 80%;"></div>       
       </div>
       <div class="chart-item" >
@@ -699,7 +665,7 @@
       Until 2012, the overall trend mirrored the pattern in computer sciences, which account for a large portion (nearly 50% in 2012 and 31% in 2019) of S&E associate&apos;s degrees (Figure HED-4). 
       Since 2012, the total number of S&E associate&apos;s degrees has continued to increase despite a decline in the number of computer sciences degrees.
     </h2> 
-    <h2><br>S&E coursework <a href="#target"><em>(Click here for course detail)</em></a> at the undergraduate level prepares knowledgeable citizens in a society 
+    <h2><br>S&E coursework <a href="#target">(Click here for majors' detail)</a> at the undergraduate level prepares knowledgeable citizens in a society 
       increasingly reliant on science and technology. Over the past 20 years, the number of undergraduate degrees awarded by U.S. academic 
       institutions has increased in both S&E and non-S&E fields. According to the U.S. Department of Education, the number of associate&apos;s 
       degrees awarded is projected to increase by 1%, 
