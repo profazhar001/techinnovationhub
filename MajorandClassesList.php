@@ -19,19 +19,11 @@
             text-align: center;
         }
         .container{
-            background-image: url("bmccbackground.jpeg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center center;
-            background-attachment: fixed;
             width: 100%;
             height: 100%;
-            margin-bottom: 40px;
-             
+            margin-bottom: 40px;             
         }
-      
-      
-        
+ 
 
         tr:hover {
             background-color: #ddd;
@@ -170,7 +162,8 @@
             margin-top: 90px;
             width:400px;
             height:300px;  
-            border-radius: 1000px;          
+            border-radius: 1000px;    
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);      
         }
 
     </style>
@@ -190,7 +183,7 @@
                 </li>
                 <li class="menu-items">
                     
-                    <a href="index.php"><i class="fa-solid fa-house"></i>Home</a>
+                    <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
                     <a href="CourseSearch.php"><i class="fa-brands fa-searchengin"></i>Course Search</a>
                     <a href="MajorandClassesList.php"><i class="fa-solid fa-list"></i>Major and Classes List</a>
                     <a href="MajorCoursePlanner.html"><i class="fa-brands fa-golang"></i>Major Course Planner</a>
