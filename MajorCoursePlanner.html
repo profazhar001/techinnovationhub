@@ -8,12 +8,7 @@ body {
       font-family: Arial, sans-serif;
       background-color: #ffffff;
       margin: 0;
-      padding: 0;
-      background-image: url("bmccbackground.jpeg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center center;
-      background-attachment: fixed;
+      padding: 0; 
       text-align: center;
     }
 
@@ -225,6 +220,7 @@ tr:hover {
             margin-top: 90px;
             width: 600px;
             height:350px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
     
         .fa-solid {
@@ -235,6 +231,11 @@ tr:hover {
                     font-size: 20px; /* Adjust the size as needed */
                     margin-right: 10px; /* Optional: Adds some spacing between the icon and the text */
                 }
+           .courseResults{
+          display: flex;
+          max-width: 1200px;
+          margin: auto;
+           }     
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
@@ -271,9 +272,16 @@ tr:hover {
 </header>
 <div class="content-wrapper">
 <div class="img_planner">
-  <i class="fa-solid fa-list-check"></i>
+ 
   <img src="plannerlogo.png" alt="plannerlogo" class="plannerlogo">
+   <p style="color: black;font-size: medium;font-family: Arial, sans-serif;"><i class="fa-solid fa-list-check"></i>Please Submit Your Major and Select Taken Courses </p>
 </div>
+<h3>Remaining Credits:</h3>
+<p id="remaining-credits"></p>
+
+<h3>Degree Completion:</h3>
+<p id="completion-percentage"></p>
+
   <div class="container">
     <div class="box" id="all-courses">
       <h3 class="box-title">All Courses</h3>
@@ -300,14 +308,7 @@ tr:hover {
     <br>
     <input type="submit" value="Submit">
   </form>
-
-  <h3>Taken Courses:</h3>
-  <table id="taken-courses-table">
-    <tr>
-      <th>Course Name</th>
-    </tr>
-  </table>
-
+  <div class="courseResults">
   <h3>Remaining Courses:</h3>
   <table id="remaining-courses-table">
     <tr>
@@ -315,12 +316,17 @@ tr:hover {
       <th>Credits</th>
     </tr>
   </table>
+  <h3>Taken Courses:</h3>
+  <table id="taken-courses-table">
+    <tr>
+      <th>Course Name</th>
+      <th>Credits</th>
+    </tr>
+  </table>
 
-  <h3>Remaining Credits:</h3>
-  <p id="remaining-credits"></p>
+</div>
 
-  <h3>Degree Completion:</h3>
-  <p id="completion-percentage"></p>
+
 
   <h4  >Note: The table shows the four categories:Individual and Society, US Experience in Its Diversity, World Cultures and Global Issues, and Program Electives will be displaying 
     on the page <a href="electives.php"> Elective Courses</a>
