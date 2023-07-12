@@ -203,11 +203,7 @@
     <div class="listlogo_background">
     <img src="listlogo.png" alt="ListLogo" class="Listlogo">
     </div>
-    <h1><i  class="fa-solid fa-list-check"></i>Major Curriculum List</h1>
- 
-  
-   
-   
+    <h1><i  class="fa-solid fa-list-check"></i>Major Curriculum List</h1> 
 
         <div class="content">
         <footer class="footer">
