@@ -67,8 +67,8 @@ INSERT INTO Courses (course_id, course_name, major_id, credits) VALUES
 INSERT INTO Semester (semester_id, major_id, course1, course2, course3, course4, course5, course6, total_credits) VALUES
 (1, 1, 1, 2, 3, 4, 5, NULL, 16),
 (2, 1, 6, 7, 8, 9, NULL, NULL, 14),
-(3, 1, 10, 11, 12, 13, NULL, NULL, 14),
-(4, 1, 14, 15, 16, 17, 18, NULL, 16);
+(3, 1, 10, 11, 12, 13, 14, NULL, 18),
+(4, 1, 15, 16, 17, 18, 19, NULL, 15);
 
 
 -- Insert data into the Courses table for the Computer Information Systems major
@@ -95,10 +95,10 @@ INSERT INTO Courses (course_id, course_name, major_id, credits) VALUES
 
 -- Insert data into the Semester table for the Computer Information Systems major
 INSERT INTO Semester (semester_id, major_id, course1, course2, course3, course4, course5, course6, total_credits) VALUES
-(1, 2, 19, 20, 21, 22, 23, NULL, 15),
-(2, 2, 24, 25, 26, 27, NULL, NULL, 15),
+(1, 2, 24, 20, 21, 22, 23, NULL, 15),
+(2, 2, 19, 25, 26, 27, NULL, NULL, 15),
 (3, 2, 28, 29, 30, 31, 32, NULL, 15),
-(4, 2, 33, 34, 35, 36, NULL, NULL, 12);
+(4, 2, 33, 34, 35, 36, 37, 38, 15);
 
 -- Insert data into the Courses table for the Computer Network Technology major
 INSERT INTO Courses (course_id, course_name, major_id, credits) VALUES
@@ -124,10 +124,10 @@ INSERT INTO Courses (course_id, course_name, major_id, credits) VALUES
 
 -- Insert data into the Semester table for the Computer Network Technology major
 INSERT INTO Semester (semester_id, major_id, course1, course2, course3, course4, course5, course6, total_credits) VALUES
-(1, 3, 38, 39, 40, 41, 42, NULL, 16),
-(2, 3, 43, 44, 45, 46, 47, NULL, 16),
-(3, 3, 48, 49, 50, 51, 52, NULL, 16),
-(4, 3, 53, 54, 55, 56, NULL, NULL, 12);
+(1, 3, 39, 40, 41, 42, 43, NULL, 16),
+(2, 3, 44, 45, 46, 47, 48, NULL, 16),
+(3, 3, 49, 50, 51, 52, 54, NULL, 16),
+(4, 3, 53, 55, 56, 57, NULL, NULL, 12);
 
 -- Insert data into the Courses table for the Geographic Information Science major
 INSERT INTO Courses (course_id, course_name, major_id, credits) VALUES
@@ -153,8 +153,8 @@ INSERT INTO Courses (course_id, course_name, major_id, credits) VALUES
 
 -- Insert data into the Semester table for the Geographic Information Science major
 INSERT INTO Semester (semester_id, major_id, course1, course2, course3, course4, course5, course6, total_credits) VALUES
-(1, 4, 57, 58, 59, 60, 61, NULL, 17),
-(2, 4, 62, 63, 64, 65, NULL, NULL, 15),
-(3, 4, 66, 67, 68, 69, 70, NULL, 15),
-(4, 4, 71, 72, 73, 74, 75, NULL, 15);
+(1, 4, 58, 59, 60, 61, 62, NULL, 17),
+(2, 4, 63, 64, 65, 66, NULL, NULL, 15),
+(3, 4, 67, 68, 69, 70, 71, NULL, 15),
+(4, 4, 72, 73, 74, 75, 76, NULL, 15);
 
