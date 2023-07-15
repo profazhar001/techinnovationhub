@@ -267,22 +267,7 @@
 
         <?php
      /* Database credentials*/
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'Electives_courses');
- 
-/* Attempt to connect to MySQL database */
-$conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
- 
-// Check connection
-if($conn === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
-        $searchResults = [];
-
-        if (isset($_POST['submit'])) {
-            // Get the search query
+   require_once "config2.php";
             $search = $_POST['search'];
 
             // Check if the search query is not empty
@@ -314,7 +299,7 @@ if($conn === false){
                     }
                 }
             }
-        }
+        
         ?>
 
         <?php if (!empty($searchResults)): ?>
@@ -353,13 +338,8 @@ if($conn === false){
         </ul>
        
         <?php
-            // Establish a connection to the database
- 
- 
-// Check connection
-if($conn === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+
+ require_once "config2.php";
             // SQL query to retrieve the course information
             $query = "SELECT id, course_name, credit, description, 'Individual and Society' AS table_name FROM `Individual and Society`
                       UNION
