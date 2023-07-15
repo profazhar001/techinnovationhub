@@ -267,7 +267,18 @@
 
         <?php
      /* Database credentials*/
-   require_once "config2.php";
+  
+// Database connection
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "Majors";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
             $search = $_POST['search'];
 
             // Check if the search query is not empty
@@ -339,7 +350,8 @@
        
         <?php
 
- require_once "config2.php";
+
+ 
             // SQL query to retrieve the course information
             $query = "SELECT id, course_name, credit, description, 'Individual and Society' AS table_name FROM `Individual and Society`
                       UNION
