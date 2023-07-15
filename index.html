@@ -130,6 +130,7 @@
             }
 
         .body-images {
+            margin-top: 50px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 50px;
@@ -137,8 +138,7 @@
             align-items: center;
             margin-bottom: 50px;
             list-style: none;
-            z-index: auto;
-            
+            z-index: auto;            
             padding-bottom: 20px;
             }
 
@@ -146,8 +146,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-          
-
             }
 
         .body-images a {
@@ -161,8 +159,7 @@
             text-decoration: none;
             font-weight: bold; 
             margin-top: 20px;
-            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-               
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);               
         }
         .body-images a:hover {
             color: rgb(52, 92, 80);
@@ -183,6 +180,7 @@
         
             }
             h1{
+                
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
                 color: #000;
                 text-align: center;
@@ -193,8 +191,7 @@
                 font-weight: 400;
                 line-height: normal;
             }
-            h2{
-              
+            h2{              
                 color: rgb(91, 86, 86);              
                 text-align: center;
                 font-size: 25px;
@@ -206,8 +203,7 @@
                 justify-content: center;
                 color: #686f70;
                 font-size: 18px;
-            }
-             
+            }             
             .team-members {
             /* margin-top: 150px; */
             font-weight: normal;
@@ -251,8 +247,7 @@
                         position: relative;
                         margin-bottom: 450px;
                         margin-top: 50px;
-                        z-index: -1;
- 
+                        z-index: -1; 
 
                     }
 
@@ -267,26 +262,32 @@
                         height: 450px;
                         width: 100%;
                     }
-                     .bmccwelcomeimg1{
-                        margin: 50px 150px 0 300px;
+                    .bmccwelcomeimg1{
+                        /* margin: 50px 150px 0 300px; */
                         width: 350px;
                         height: 350px;
                         border-radius: 1000px;   
                         box-shadow: 0 0 10px 5px rgba(18, 20, 19, 0.6);                    
 
-                     }
+                    }
                     
-                      .bmccwelcomeimg2 ,.bmccwelcomeimg3  {
-                        margin: 50px 150px 0 300px;
+                    .bmccwelcomeimg2 ,.bmccwelcomeimg3  {
+                        /* margin: 50px 150px 0 300px; */
                         width: 350px;
                         height: 350px;
                         border-radius: 1000px;   
-                        box-shadow: 0 0 10px 5px rgba(36, 39, 37, 0.6); 
+                        box-shadow: 0 0 10px 5px rgba(36, 39, 37, 0.6);                          
                         }
                         h2 a{
                             color: #3f828e;
                             font-family:'Courier New', Courier, monospace;
                             text-shadow: 2px 2px 4px rgba(22, 24, 23, 0.5);
+                        }
+                        .Welcomesection{
+                            display: grid;
+                            justify-content: center;
+                            grid-template-columns: auto; /* Adjust the number of columns as needed */
+                            row-gap: 50px;
                         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -344,7 +345,7 @@
             Phone: (212) 220-1476             
             Office Hours:    
             Monday-Friday
-            9 a.m.-5 p.m</h2>           
+            9 a.m.-5 p.m<br><br> For more information about our Campus, <a href="bmccinformation.html">Please Check here </a></h2>           
         </div>
             <div class="welcomeimgs" style="display: flex;align-items:center;">
             <img src="Welcomeimg5.jpeg" alt="bmccwelcome" class="bmccwelcomeimg3">  <h2 style="max-width: 600px;font-size: 25px;
@@ -381,6 +382,13 @@
         </h2>
         <ul class="body-images">
             <li class="body-image">
+            <div>
+                <img src="index_page_bmcc_logo.png" alt="DataAnalysis" class="pic">
+                <a href="bmccinformation.html">Campus Information</a>
+              </div>
+              </li>
+            <li class="body-image">
+               
               <div>
                 <img src="index_page_img1.jpeg" alt="Course List" class="pic">
                 <a href="MajorandClassesList.php">Major and Classes List</a>
