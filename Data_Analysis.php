@@ -263,6 +263,9 @@
                 color:black;
                 text-decoration: underline;
               }
+              p{
+    font-size:20px;
+  }
       </style>
   <script>
   window.onload = function () {
@@ -600,7 +603,8 @@
   chart.render();
 
   }
-
+ 
+ 
   </script>
   <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
       <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
@@ -618,11 +622,11 @@
                   </a>
               </li>
               <li class="menu-items">
-                  <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
-                  <a href="CourseSearch.php"><i class="fa-brands fa-searchengin"></i>Course Search</a>
-                  <a href="MajorandClassesList.php"><i class="fa-solid fa-list"></i>Major and Classes List</a>
-                  <a href="MajorCoursePlanner.html"><i class="fa-brands fa-golang"></i>Major Course Planner</a>
-                  <a href="piecharts.html"><i class="fa-solid fa-clock"></i>View Enrollment Data</a>
+              <a href="Homepage.html"><i class="fa-solid fa-house"></i>Home</a>
+                        <a href="page4.php"><i class="fa-brands fa-searchengin"></i>Course Search</a>
+                        <a href="page2.php"><i class="fa-solid fa-list"></i>Major and Classes List</a>
+                        <a href="page3.html"><i class="fa-brands fa-golang"></i>Major Course Planner</a>
+                        <a href="page6.html"><i class="fa-solid fa-clock"></i>View Enrollment Data</a>
               </li>
               <li class="search-bar">
                   <form class="search-form">
@@ -636,12 +640,13 @@
   <h1 style="text-align:center; margin-top: 80px;"> U.S. nation Graduation Data of S&E (Science & Engineering) Marjors in Associate's Degrees from 2000 to 2019.</h1>
   <div class="text" style="max-width: 800px; margin: 0 auto; text-align: center;">
   
-    <h2 ><em>S&E Associate&apos;s Degrees</em><a href="#target">(Click here for majors' detail)</a><br>
+    <p><em>S&E Associate&apos;s Degrees</em><a href="#target">(Click here for majors' detail)</a><br>
       Associate&apos;s degrees are the final degree earned by some students, whereas others continue their education at 4-year colleges or universities and earn higher degrees. 
       Many who transfer from community colleges to baccalaureate-granting institutions do not earn associate&apos;s degrees before transferring; they may be able to transfer credit 
-      for specific courses.<br><br></h2>
+      for specific courses.<br><br></p>
     
   </div>
+  <hr>
   <div class="chart-container1">
 
       <div class="chart-item">
@@ -652,26 +657,29 @@
           <div id="chartContainer2" style="height: 370px;width: 80%;"></div>
       </div>
     <div class="chart-item">
-    <h2 style="max-width:80%;font-weight: bold;font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:23px;">Number of graduates by Degree Level 2000 & 2019 (National) </h2>
+    <p style="max-width:80%;font-weight: bold;font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:23px;">Number of graduates by Degree Level 2000 & 2019 (National) </p>
           <div id="chartContainer9" style="height: 370px; width: 80%;"></div>       
       </div>
       <div class="chart-item" >
           <div id="chartContainer10" style="height: 370px; width: 80%; "></div>       
       </div>
   </div>
+
   <div class="text" style="max-width: 1200px; margin: 0 auto; text-align: center;">
-  <h2> <br><br>Relatively few associate&apos;s degrees are awarded in S&E fields. In 2019, 104,000 out of more than 1 million associate&apos;s degrees (10%) were in S&E fields 
+  <p> <br><br>Relatively few associate&apos;s degrees are awarded in S&E fields. In 2019, 104,000 out of more than 1 million associate&apos;s degrees (10%) were in S&E fields 
       (see &apos;Table column 3&apos;). The total number of S&E associate&apos;s degrees awarded declined from 2003 to 2007 but has risen in almost all years since then.
       Until 2012, the overall trend mirrored the pattern in computer sciences, which account for a large portion (nearly 50% in 2012 and 31% in 2019) of S&E associate&apos;s degrees (Figure HED-4). 
       Since 2012, the total number of S&E associate&apos;s degrees has continued to increase despite a decline in the number of computer sciences degrees.
-    </h2> 
-    <h2><br>S&E coursework <a href="#target">(Click here for majors' detail)</a> at the undergraduate level prepares knowledgeable citizens in a society 
+    </p> 
+    <p><br>S&E coursework <a href="#target">(Click here for majors' detail)</a> at the undergraduate level prepares knowledgeable citizens in a society 
       increasingly reliant on science and technology. Over the past 20 years, the number of undergraduate degrees awarded by U.S. academic 
       institutions has increased in both S&E and non-S&E fields. According to the U.S. Department of Education, the number of associate&apos;s 
       degrees awarded is projected to increase by 1%, 
       and the number of bachelor&apos;s degrees awarded should increase by 3% over the period spanning 2017&ndash;29.
      
-    </h2>
+    </p>
+    <hr style="  border: 2px solid gray;
+  border-radius: 5px;">
     <h1> <br> <br> Enrollment / Graduation Data at BMCC 2015-2022<h1>
 </div>
     <div class="chart-container2">
@@ -701,13 +709,16 @@
           <div id="chartContainer12" style="height: 370px; width: 80%;"></div>       
       </div>
   </div>
-  <h2 style="font-size:15px;">
+  <hr style="  border: 2px solid black;
+  border-radius: 10px;">
+  <p style="font-size:15px;">
     <br><br><em>Reference: National Center for Education Statistics, Integrated Postsecondary Education Data System (IPEDS), 
     Completions Survey; National Center for Science and Engineering Statistics, Table Builder.</em>
-    <br> link:<a href="https://ncses.nsf.gov/pubs/nsb20223/trends-in-undergraduate-and-graduate-s-e-degree-awards">Click here</a> <br><br> </h2>
-  <h2 id="target">S&E majors breakdown</h2>
+    <br> link:<a href="https://ncses.nsf.gov/pubs/nsb20223/trends-in-undergraduate-and-graduate-s-e-degree-awards">Click here</a> <br><br> </p>
+    <hr>
+    <h2 id="target">S&E majors breakdown</h2>
   <div class="footnote">
-
+ 
   <table>
     <tr>
   
