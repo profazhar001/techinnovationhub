@@ -622,7 +622,7 @@
                   </a>
               </li>
               <li class="menu-items">
-              <a href="Homepage.html"><i class="fa-solid fa-house"></i>Home</a>
+              <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
                         <a href="page4.php"><i class="fa-brands fa-searchengin"></i>Course Search</a>
                         <a href="page2.php"><i class="fa-solid fa-list"></i>Major and Classes List</a>
                         <a href="page3.html"><i class="fa-brands fa-golang"></i>Major Course Planner</a>
