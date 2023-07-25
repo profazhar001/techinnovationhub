@@ -1,0 +1,367 @@
+
+    <!DOCTYPE html>
+    <html>
+        
+        <head>
+
+            <style>
+                h2 {
+                    margin-top: 60px;
+                    text-align: center;
+                    font-style: bold;
+                    font-size: 50px;
+                }
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;                    
+                    font-size: 15px;
+                    
+                }
+                .icon {
+                    width: 150px;
+                    height: 40px;
+                    margin-right: 10px;
+                    }
+
+.menu-items {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .Topbar {
+position: fixed;
+list-style-type: none;
+width: 100%;
+margin: 0;
+padding: 0;
+overflow: hidden;
+display: flex;
+align-items: center;
+background-color: #1c8fa9;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+z-index: 1000;
+}
+
+.Topbar li {
+    float: left;
+}
+
+.Topbar li a {
+    /* display: inline-block; */
+    color: white;
+    text-align: left;
+    padding: 14px 8px 8px 8px;
+    text-decoration: none;
+    font-weight: bold;       
+    background-color: #1c8fa9;
+    
+}      
+.Topbar a:hover {
+    color: #ddd;
+}
+.fa-solid {
+        font-size: 20px; /* Adjust the size as needed */
+        margin-right: 10px; /* Optional: Adds some spacing between the icon and the text */
+        }
+        .fa-brands{
+            font-size: 20px; /* Adjust the size as needed */
+            margin-right: 10px; /* Optional: Adds some spacing between the icon and the text */
+        }
+
+    .search-bar {
+        float: left;
+        margin-top: 8px;
+    }
+
+    .search-form {
+        margin: 0;
+        padding: 0;
+    }
+
+    .search-form input[type="text"] {
+        padding: 6px;
+        border-radius: 4px;
+        border: none;
+        border: 1px solid black;
+    }
+
+    .search-form button {
+        padding: 6px 10px;
+        border-radius: 4px;
+        border: none;
+        background-color: #4CAF50;
+        color: #fff;
+        cursor: pointer;
+    }
+                .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #3f828e;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+        z-index: 1;
+    }
+                .chart-container {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 40px;
+                }
+                .container {
+                    background-color: rgba(255, 255, 255, 0.9);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    }
+                
+                tr:hover {background-color: #ddd;}
+            
+         
+
+                .menu-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px; /* Add spacing between menu items */
+                }
+
+.img_data{
+  background-color: #ffffff;
+}
+.datalogo{
+    border-radius: 26px;
+    margin-top: 90px;
+    width: 800px;
+    height:300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+            
+            </style>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+            <script src="https://kit.fontawesome.com/0d370ca485.js" crossorigin="anonymous"></script>
+
+        </head>
+        
+    <body>
+        <header>
+            <nav>
+                
+                <ul class="Topbar">
+                    <li class="logo-item">
+                        <a href="#">
+                            <img src="bmccicon.png" alt="icon" class="icon">
+                        </a>
+                    </li>
+                    <li class="menu-items">
+            
+                        <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                        <a href="CourseSearch.php"><i class="fa-brands fa-searchengin"></i>Course Search</a>
+                        <a href="MajorandClassesList.php"><i class="fa-solid fa-list"></i>Major and Classes List</a>
+                        <a href="MajorCoursePlanner.html"><i class="fa-brands fa-golang"></i>Major Course Planner</a>
+                        <a href="piecharts.html"><i class="fa-solid fa-clock"></i>View Enrollment Data</a>
+                    </li>
+                    <li class="search-bar">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search" class="search-input">
+                            <button type="submit" class="search-button">Go</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+       
+        <div class="content">
+        <div class="img_data">
+            <img src="datalogo.png" alt="datalogo" class="datalogo">
+          </div>
+      
+        <h2 ><i class="fa-solid fa-magnifying-glass-chart"></i>Enrollment data </h2>
+    
+
+       
+        <div class="grid-container">
+        <div class="chart-container">
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        </div>
+        <div class="chart-container">
+            <div id="chartContainer1" style="height: 370px; width: 100%;"></div>
+        </div>
+        <div class="chart-container">
+            <div id="chartContainer2" style="height: 370px; width: 100%;"></div>
+        </div>
+        <div class="chart-container">
+            <div id="chartContainer3" style="height: 370px; width: 100%;"></div>
+        </div>
+        <div class="chart-container">
+            <div id="chartContainer4" style="height: 370px; width: 100%;"></div>
+        </div>
+        </div>
+        <footer class="footer">
+            @ Borough of Manhattan Community College | 199 Chambers Street | New York, NY 10007 | Contact Us | Privacy Policy
+        </footer>
+        <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+        <script>
+        var dataPoints = [
+            { label: "Computer Science", y: 1026 },
+            { label: "Computer Information Systems", y: 256 },
+            { label: "Geographic Information Science", y: 10 },
+            { label: "Computer Network Technology", y: 157 },
+        ];
+
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            exportEnabled: true,
+            title: {
+            text: "BMCC CIS Department in CS, CIS, GIS, and CNT Enrollment Data (Fall 2022)"
+            },
+            subtitles: [{
+            text: "Major Distribution Analysis"
+            }],
+            data: [{
+            type: "pie",
+            showInLegend: true,
+            legendText: "{label}",
+            indexLabelFontSize: 16,
+            indexLabel: "{label} - #percent%",
+            dataPoints: dataPoints
+            }]
+        });
+
+        chart.render();
+        </script>
+        <script>
+        var dataPoints1 = [
+            { label: "Asian", y: 85 },
+            { label: "Black", y: 80 },
+            { label: "Hispanic", y: 74 },
+            { label: "White", y: 17 },
+            { label: "Native American", y: 0 },
+        ];
+
+        var chart1 = new CanvasJS.Chart("chartContainer1", {
+            animationEnabled: true,
+            exportEnabled: true,
+            title: {
+            text: "Computer Information Systems - Ethnicity Data(Fall 2022)"
+            },
+            subtitles: [{
+            text: "Ethnicity Analysis"
+            }],
+            data: [{
+            type: "pie",
+            showInLegend: true,
+            legendText: "{label}",
+            indexLabelFontSize: 16,
+            indexLabel: "{label} - #percent%",
+            dataPoints: dataPoints1
+            }]
+        });
+
+        chart1.render();
+        </script>
+
+        <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+        <script>
+        var dataPoints2 = [
+            { label: "Asian", y: 297 },
+            { label: "Black", y: 310 },
+            { label: "Hispanic", y: 283 },
+            { label: "White", y: 133 },
+        { label: "Native American", y: 3 },
+        ];
+
+        var chart2 = new CanvasJS.Chart("chartContainer2", {
+            animationEnabled: true,
+            exportEnabled: true,
+            title: {
+            text: "Computer Science - Ethnicity Data(Fall 2022)"
+            },
+            subtitles: [{
+            text: "Ethnicity Analysis"
+            }],
+            data: [{
+            type: "pie",
+            showInLegend: true,
+            legendText: "{label}",
+            indexLabelFontSize: 16,
+            indexLabel: "{label} - #percent%",
+            dataPoints: dataPoints2
+            }]
+        });
+
+        chart2.render();
+        </script>
+
+        <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+        <script>
+        var dataPoints3 = [
+            { label: "Asian", y: 34 },
+            { label: "Black", y: 52 },
+            { label: "Hispanic", y: 55 },
+            { label: "White", y: 15 },
+            { label: "Native American", y: 1 },
+        ];
+
+        var chart3 = new CanvasJS.Chart("chartContainer3", {
+            animationEnabled: true,
+            exportEnabled: true,
+            title: {
+            text: "Computer Network Technology - Ethnicity Data(Fall 2022)"
+            },
+            subtitles: [{
+            text: "Ethnicity Analysis"
+            }],
+            data: [{
+            type: "pie",
+            showInLegend: true,
+            legendText: "{label}",
+            indexLabelFontSize: 16,
+            indexLabel: "{label} - #percent%",
+            dataPoints: dataPoints3
+            }]
+        });
+
+        chart3.render();
+        </script>
+
+        <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+        <script>
+        var dataPoints4 = [
+            { label: "Asian", y: 2 },
+            { label: "Black", y: 1 },
+            { label: "Hispanic", y: 4 },
+            { label: "White", y: 3 },
+        { label: "Native American", y: 0 },
+        ];
+
+        var chart4 = new CanvasJS.Chart("chartContainer4", {
+            animationEnabled: true,
+            exportEnabled: true,
+            title: {
+            text: "Geographic Information Systems - Ethnicity Data(Fall 2022)"
+            },
+            subtitles: [{
+            text: "Ethnicity Analysis"
+            }],
+            data: [{
+            type: "pie",
+            showInLegend: true,
+            legendText: "{label}",
+            indexLabelFontSize: 16,
+            indexLabel: "{label} - #percent%",
+            dataPoints: dataPoints4
+            }]
+        });
+
+        chart4.render();
+        </script>
+        </div>
+    </body>
+    </html>
+    
