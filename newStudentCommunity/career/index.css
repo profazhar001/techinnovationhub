@@ -1,0 +1,355 @@
+
+
+    /*articulation agreements with colleges*/
+   * {
+  box-sizing: border-box;
+}
+   /* section nav style*/
+   section.secnav{
+     background-color: white;
+      font-family: 'Koh Santepheap';
+      font-size: 20px;
+      
+  }
+   
+   section.secnav>div>div>div>ul>li>a{
+     float: right;
+     padding: 10px 20px;
+     color: white;
+     text-decoration: none;
+     font-family: 'Koh Santepheap';
+     font-size: 20px;
+   }
+   section.secnav>div>div>div>ul>li>a:hover{
+     background-color: #249DB8;
+     border-radius: 5px;
+     transition: 0.5s;
+   }
+
+   
+/* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: auto;
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+   .column.tabs{
+
+    background-color: white;
+    position: relative;
+    width: 18vw;
+    height: 100%;
+    top:15px;
+    border-radius: 18px;
+    color: black;
+    margin-right: 2vw;
+    transition: 0.5s;
+   }
+   .column.tabs:hover{
+
+    background-color: white;
+    position: relative;
+    width: 18vw;
+    height: 150%;
+     top: -5px;
+    border-radius: 18px;
+    color: black;
+    margin-right: 2vw;
+     transition: 0.1s;
+   }
+/*mobile nav*/
+
+   div.mobnav {
+  display: none;
+}
+div.decknav {
+    display: block;
+  }
+a.tabbuttons{
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: black;
+  font-family: 'Varela Round';
+  font-size: 150%;
+  display: block;
+  padding: 10% 0px;
+  background-color: rgba(0, 0, 0, 0);
+  }
+   img.contr{
+     width: 120px;
+    border-radius: 30px;
+     
+   }
+   h2.contr{
+     font-size: 200% ;
+   }
+
+
+@media only screen and (max-width: 950px) {
+  div.mobnav {
+    display: block;
+    
+  }
+   div.decknav {
+  display: none;
+  }
+  a.tabbuttons{
+    font-size: 80%;
+    
+  }
+  img.contr{
+     width: 55px;
+    border-radius: 15px;
+   }
+  h2.contr{
+    font-size: 100% ;
+  }
+}
+
+  
+
+@media only screen and (min-width: 950px) {
+  
+}
+   .mobile-container {
+  max-width: 950px;
+  margin: auto;
+  background-color: white;
+  height: 100%;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #249DB8;
+  position: fixed;
+  width: 101%;
+  top: 0%;
+  z-index: 5;
+  left: -5px;
+}
+
+.topnav #myLinks {
+  display: none;
+  
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #249DB8;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #127B92;
+  color: white;
+  transition: 0.5s;
+}
+
+.active {
+  background-color: #55BED6;
+  color: white;
+  
+}
+   /*button activation of page*/
+
+  #page1 { 
+  display: none; 
+  
+} 
+ 
+#page1:target { 
+  display: block; 
+  
+  
+  margin-top: 0px;
+} 
+  #page2 { 
+  display: none; 
+  transition: 0.5s;
+} 
+ 
+#page2:target { 
+  display: block; 
+  transition: 0.5s;
+}
+  #page3 { 
+  display: none; 
+  transition: 0.5s;
+} 
+ 
+#page3:target { 
+  display: block; 
+  transition: 0.5s;
+} 
+  #page4 { 
+  display: none; 
+  transition: 0.5s;
+} 
+ 
+#page4:target { 
+  display: block;
+  transition: 0.5s; 
+} 
+   /* section 1 style*/
+   section.sec1{
+     background-color: white;
+      font-family: 'Varela Round';
+      font-size: 20px;
+      margin-bottom: 100px;
+      
+  }
+   
+
+  select.sec1,select.sec1:focus,input[type=text].sec1,button.sec1{
+   border-radius: 30px; 
+   width: 450px; 
+   height: auto; 
+   padding: 10px 0px;
+   font-size: 20px;
+   outline: none !important;
+   transition: 0.5s;
+   text-align: center; 
+   background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1b1b3d20;
+    
+ }
+ select.sec1:hover{
+   width: 460px;
+   font-size: 22px;
+   background-color: rgb(245, 252, 255);
+ }
+ button.sec1:hover{
+  width: 105px;
+  font-size: 21px;
+  border-width: 2px;
+  background-color: #d4fcff;
+}
+ select.sec1>option:checked, select.sec1>option:first-child:hover {
+   background-color: #00d0ff61;
+ }
+   
+  /*Bottom section*/
+   div.team-members{
+      margin-top: 50px;
+      font-weight: normal;
+      display: block;
+      text-align: center;
+      font-family: 'Koh Santepheap';
+      color:  #55BED6;
+      background-color: #127B92;
+      box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
+   }
+    
+   iframe {
+    /*
+    width: 100%;
+    height: 93.5vw;
+    border: none; 
+    box-sizing: inherit;*/
+    box-sizing: content-box;
+    top: 0;
+    left: 0;
+    width: 98vw;
+    height: 96vw;
+    border: none;
+    
+    }
+
+    /*----------------------*/
+    .blockofstuf {
+      font-family: 'Varela Round';
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 2;
+      width: 30%;
+      color: #1b1b3d;
+      padding: 20px;
+      margin:auto;
+      background-color: white;
+      border-style: solid;
+      border-width: 3px;
+      border-color: #1b1b3d20;
+      border-radius: 25px;
+      margin-bottom:20px;
+}
+
+    .suggestions-container {
+      height: 200px;
+      overflow-y: auto;
+      line-height: 2.5;
+      width:400px; 
+      padding: 20px; 
+      border-radius: 30px;   
+      margin-left:auto; 
+      margin-right:auto;
+      transition: 0.5s;
+      background-color: rgba(255, 255, 255, 0.274);
+      border-style: solid;
+      border-width: 3px;
+      border-color: #1b1b3d20;
+      color: black;
+  }
+  div.suggestion{
+    font-weight: bold;
+    font-family: 'Varela Round';
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .suggestion:hover{
+    background-color: #e2fdff;
+    color: black;
+    border-radius: 20px;
+}
+    /*----------------------*/
+
+
+   /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #249DB8; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #127B92; 
+  
+}
+   /*---------------------------------------------------*/

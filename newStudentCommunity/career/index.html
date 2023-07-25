@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Koh Santepheap' rel='stylesheet'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="index.css">
+<style>
+     /* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #249DB8; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #127B92 ; 
+  
+}
+
+.sectionex {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 5%;
+    font-size: 18px;
+}
+.sectionex>p {
+    text-align: left;
+}
+</style>
+</head>
+<body>
+  
+<!-- Navigation bar-->
+  
+<section id="top" class="secnav"  >
+<div class="decknav" id="topnav">
+  <div>
+  <div style = "background-color: #249DB8; 
+         width: 101%; 
+         height:80px; 
+         position:fixed; 
+        left: -5px;
+         top:0px; 
+          border-radius: 5px;
+         z-index:1">
+    
+  </div>
+  <div style = "background-color: #127B92; 
+         width: 735px; 
+         height:55px; 
+         position:fixed; 
+         top:15px; 
+         right: 4.5%;
+          opacity: 0.8;
+          border-radius: 5px;
+         z-index:2">
+    
+  </div>
+  <div style = "
+         
+         position:fixed; 
+         top:0px; 
+         left:0px; 
+         width: 95%;
+         z-index:3;">
+  <ul style="background-color: black; color: white; top: 0px;">
+    <li style="background-color: #55BED6; list-style-type: none;">
+      <a href="#" style="float: left; padding: 0px 0px; "> <img src="https://bmccadmissions.commons.gc.cuny.edu/files/2020/08/BMCC-Logo-no-type-WHITE-1024x514.png" style="
+  display: flex;
+    width: 100px;
+    mix-blend-mode: lighten;
+    
+    "></a>
+      <a href="#" >References</a>
+      <a href="index1.html" >Career readiness </a>
+      <a href="index2.html" >Student Community</a>
+      <a href="Home.html" >Home page</a>
+    </li>
+  </ul>
+  </div>
+  </div>
+  <img src="https://bmccprodstroac.blob.core.windows.net/uploads/2022/10/beyondb.jpg" style="max-width: 100%;max-height: 100%; margin-top: 70px;">
+ </div>
+  
+<div class="mobnav">
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav" >
+  <img src="https://bmccadmissions.commons.gc.cuny.edu/files/2020/08/BMCC-Logo-no-type-WHITE-1024x514.png" style="
+  display: flex;
+    align-items: center;
+    width: 15vw;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+    mix-blend-mode: lighten;
+    ">
+  <div id="myLinks" >
+    <a href="Home.html" >Home page</a>
+    <a href="index1.html" >Career readiness </a>
+    <a href="index2.html" >Student Community</a>
+    <a href="#" >References </a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+  <img src="https://bmccprodstroac.blob.core.windows.net/uploads/2022/10/beyondb.jpg" style="max-width: 100%;max-height: 100%; margin-top: 30px;">
+
+
+<!-- End smartphone / tablet look -->
+</div>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</div>
+</section>
+
+  <!-- middle of page-->
+<div >
+<!-- pages buttons-->
+<div class="row" style="background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  width: 78vw;
+  height: 70px;
+  text-align: center;
+  top: -35px;
+  border-radius: 50px;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2vw;
+  ">
+  <div class="column tabs" >
+    <a href="#page4" class="tabbuttons" >Career readiness & Analysis</a>
+  </div>
+  <div class="column tabs" >
+    <a href="#page1" class="tabbuttons" >Learn about majors and careers</a>
+  </div>
+  <div class="column tabs" >
+    <a href="#page2" class="tabbuttons" >Catch on important skills of careers</a>
+  </div>
+  <div class="column tabs" style="margin-right: 0px;">
+    <a href="#page3" class = "tabbuttons" >Search for an internships </a>
+  </div>
+  
+</div>
+  
+  <!-- page1 -->
+  <div id="page1">
+    <section class="sec1">
+      <div class="sectionex" >
+        <h1>Learn About Majors and Careers</h1>
+        <p>In this section, you will find comprehensive information about CIS majors and the diverse range of careers they can lead to. Discover the different paths you can take within the CIS field and gain a deeper understanding of the skills and knowledge required for each major. This knowledge will help you make informed decisions about your academic and career goals.</p>
+    </div>
+      <iframe src="compare_majors.php" frameborder="0" style="height: 35vw;  width: 80%; margin-left: 10%; background-color: #3A2E3910; border-radius: 50px;"></iframe>
+  </section>
+  </div>
+  <!-- page2 -->
+  <div id="page2">
+  <section class="sec1">
+    <div class="sectionex" >
+      <h1>Catch on Important Skills of Careers</h1>
+      <p>Understanding the essential skills needed for specific careers is crucial for career development. In this section, you will explore the key skills demanded by different CIS career paths. Gain insights into technical skills, problem-solving abilities, communication skills, and more. By identifying these important skills, you can focus on developing them to enhance your employability and success in the field.</p>
+  </div>
+    <iframe src="compare_skills.php" frameborder="0" style="height: 35vw;  width: 80%; margin-left: 10%; background-color: #3A2E3910; border-radius: 50px;"></iframe>
+</section>
+  </div>
+  
+    <!-- page3 -->
+  <div id="page3">
+  <section class="sec1">
+    <div class="sectionex" >
+      <h1>Search for Internships</h1>
+      <p>Internships play a vital role in gaining practical experience and bridging the gap between classroom learning and real-world applications. In this section, you can search for internships related to CIS majors. Discover valuable opportunities to apply your knowledge, develop professional networks, and gain hands-on experience. Internships provide an excellent platform to refine your skills, explore potential career paths, and increase your chances of securing employment after graduation.</p>
+  </div>
+    <iframe src="compare_intern.php" frameborder="0" style="height: 45vw;  width: 80%; margin-left: 10%; background-color: #3A2E3910; border-radius: 50px;"></iframe>
+</section>
+  </div>
+    <!-- page4 -->
+  <div id="page4">
+  <section class="sec1">
+    <div class="sectionex">
+      <h1>Career Readiness & Analysis</h1>
+      <p>Welcome to the Career Readiness & Analysis page! This page is designed to provide valuable information to BMCC students who are interested in CIS (Computer Information Systems) majors and the careers associated with them. By exploring the sections below, you can gain insights into the majors, learn about important skills required for various careers, and search for internships.</p>
+  </div>
+<div class="row"  style="margin-left: 5%;">
+  <div class="sectionex column" style="width:28%; margin: 1%;">
+      <h1>Learn About Majors and Careers</h1>
+      <p>In this section, you will find comprehensive information about CIS majors and the diverse range of careers they can lead to. Discover the different paths you can take within the CIS field and gain a deeper understanding of the skills and knowledge required for each major. This knowledge will help you make informed decisions about your academic and career goals.</p>
+  </div>
+
+  <div class="sectionex column" style="width:28%; margin: 1%;">
+      <h1>Catch on Important Skills of Careers</h1>
+      <p>Understanding the essential skills needed for specific careers is crucial for career development. In this section, you will explore the key skills demanded by different CIS career paths. Gain insights into technical skills, problem-solving abilities, communication skills, and more. By identifying these important skills, you can focus on developing them to enhance your employability and success in the field.</p>
+  </div>
+
+  <div class="sectionex column" style="width:28%; margin: 1%;">
+      <h1>Search for Internships</h1>
+      <p>Internships play a vital role in gaining practical experience and bridging the gap between classroom learning and real-world applications. In this section, you can search for internships related to CIS majors. Discover valuable opportunities to apply your knowledge, develop professional networks, and gain hands-on experience. Internships provide an excellent platform to refine your skills, explore potential career paths, and increase your chances of securing employment after graduation.</p>
+  </div>
+  </div>
+
+  <div class="sectionex">
+      <h1>Career Analysis</h1>
+      <p style="text-align: center;">Analysis over the Data our website has</p>
+  </div>
+
+  <iframe src="Lu\BMCCintership-main\Data_Analysis.php" frameborder="0" style="height: 45vw;  width: 80%; margin-left: 10%; background-color: #3A2E3910; border-radius: 50px;"></iframe>
+
+
+</section>
+  </div>
+</div>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "ca3979cb-7ded-4fde-8cb2-6e34f933a2f1", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "0df18117-9251-4626-adea-21f86e3b22a6", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+  });
+
+</script>
+
+<!-- bottom-->
+<section id="Bottom">
+
+<div class="team-members" style="height: auto;">
+
+  <div class="row" style="height: 120%;">
+    <div class="column" style="width: 25%;">
+      <h2 class="contr">Team Members</h2>
+      
+    </div>
+    <div class="column" style="width: 25%;">
+      <h2 class="contr">Mentors</h2>
+    </div>
+    <div class="column" style="width: 25%;">
+      <h2 class="contr">Special Thanks To</h2>
+    </div>
+    <div class="column" style="width: 25%;">
+      <h2 class="contr">References </h2>
+    </div>
+  </div>
+  <div class="row" >
+    <div class="column" style="width: 12.5%;" >
+      <a href="https://www.linkedin.com/in/lu-yao-6abb90236" target="_blank">
+        <img class="contr" src="https://media.licdn.com/dms/image/D4E03AQEcpfWO0fZDaQ/profile-displayphoto-shrink_200_200/0/1689701765025?e=1695254400&v=beta&t=K8KaBR7nWLToYGRYkfP3pYusp6WfviinZb6IrSA5O9A" style="
+  display: flex;
+    margin-left: auto;
+    ">
+      </a>
+    </div>
+    <div class="column" style="width: 12.5%;">
+      <a href="https://www.linkedin.com/in/mu-don" target="_blank">
+        <img class="contr" src="https://media.licdn.com/dms/image/C4D03AQEzbqFwLsGikA/profile-displayphoto-shrink_800_800/0/1663207761275?e=2147483647&v=beta&t=EIinFaOwRVbG4VBx0qWqjHrswSg_PGJUtJEYX4nfbug" style="
+  display: flex;
+    margin-right: auto;
+    ">
+      </a>
+    </div>
+    <div class="column" style="width: 12.5%;">
+      <a href="https://www.bmcc.cuny.edu/faculty/mohammad-azhar/" target="_blank">
+        <img class="contr" src="https://bmccprodstroac.blob.core.windows.net/uploads/2018/06/DrAzharProfilePictureBlackboard.png" style="
+  display: flex;
+    margin-left: auto;
+    ">
+      </a>
+    </div>
+    <div class="column" style="width: 12.5%;">
+      <a href="https://www.bmcc.cuny.edu/faculty/younes-benkarroum/" target="_blank">
+        <img class="contr" src="https://bmccprodstroac.blob.core.windows.net/uploads/2019/01/YounesNew.png" style="
+  display: flex;
+    margin-right: auto;
+    
+    ">
+      </a>
+    </div>
+    <div class="column" style="width: 25%;">
+      <a style="font-size: 70%;">
+        Sam Karasik<br>Benjamin Ezra Jenney<br>Juan Laverde
+      </a>
+    </div>
+    <div class="column" style="width: 25%;">
+      <a style="font-size: 70%;">
+        BMCC data center<br>National Science Foundation | National Science Board<br>IBM Watson
+      </a>
+    </div>
+  </div>
+  <div class="row" style="height: 100px ; ">
+    <div class="column" style="width: 25%;"> 
+      <a  style="font-size: 100%; ">Lu Yao, 	Mustafa Donmez</a>
+     
+    </div>
+    <div class="column" style="width: 25%; "> 
+      <a  style="font-size: 100%;">Prof. Azhar, Prof. Benkarroum</a>
+     
+    </div>
+    <div class="column" style="width: 25%; "> 
+     <a style="font-size: 50%; ">
+        The Computer Information Systems (CIS) Department at BMCC
+      </a>
+    </div>
+    <div class="column" style="width: 25%; "> 
+     
+    </div>
+  </div>
+  
+</div>
+  
+</section>
+  
+</body>
+</html>
+
+
